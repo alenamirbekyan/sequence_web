@@ -1,0 +1,87 @@
+.register-page {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .back-arrow {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+    color: #FFCC00;
+    cursor: pointer;
+  }
+
+  .role-selector button.selected {
+    background: #b2b2b2;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  
+  .role-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  
+  .role-selector button {
+    background: #eee;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .register-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .register-form input {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+  }
+  
+  .btn.yellow {
+    background-color: #FFCC00;
+    border: none;
+    font-weight: bold;
+    padding: 0.9rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  small {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  
