@@ -39,6 +39,8 @@ const Game = () => {
         socket.on("myTurn", (data)=>{
             const {deck} = data
             setMyTurn(true);
+            document.body.classList.add("green");
+            document.body.classList.remove("red");
             setPlayerHand(deck)
         })
 
@@ -62,6 +64,8 @@ const Game = () => {
 
         socket.on("notMyTurn", () => {
             setMyTurn(false);
+            document.body.classList.add("red");
+            document.body.classList.remove("green");
         })
 
         function supprimerJeton(index){
